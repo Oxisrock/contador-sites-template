@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabiola Rojas | Consultoría Integral</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0f172a', /* Azul Oscuro */
+                            brick: '#b91c1c', /* Rojo Ladrillo */
+                            gray: '#f1f5f9',  /* Gris con mejor contraste */
+                            dark: '#020617',  /* Footer casi negro */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .stock-img-filter {
+            filter: sepia(10%) contrast(105%) brightness(95%);
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased bg-brand-gray">
+
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center gap-2">
+                        <span class="bg-brand-brick text-white p-2 rounded-md font-bold text-xl shadow-sm">FR</span>
+                        <div class="flex flex-col">
+                            <span class="font-bold text-brand-blue text-lg leading-none">FABIOLA ROJAS</span>
+                            <span class="text-xs text-slate-600 uppercase tracking-widest font-bold">Consultoría Integral</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-brand-blue font-bold transition border-b-2 border-brand-brick pb-1">Inicio</a>
+                    <a href="about.html" class="text-slate-700 hover:text-brand-brick font-semibold transition">Sobre Mí</a>
+                    <a href="services.html" class="text-slate-700 hover:text-brand-brick font-semibold transition">Servicios</a>
+                    <a href="resources.html" class="text-slate-700 hover:text-brand-brick font-semibold transition">Recursos</a>
+                    <a href="https://wa.me/584141664241" class="bg-brand-blue text-white px-5 py-2 rounded-md hover:bg-slate-800 transition flex items-center gap-2 font-bold shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        <i class="ph ph-whatsapp-logo text-lg"></i> Agenda tu Cita
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative bg-brand-blue pt-32 pb-20 lg:pt-48 lg:pb-40 overflow-hidden">
+        <div class="absolute inset-0 opacity-[0.05]" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
+                <div class="col-span-7 mb-12 lg:mb-0 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-2 py-1 px-3 rounded-full bg-brand-brick/10 text-red-200 text-sm font-bold mb-6 border border-brand-brick/20">
+                        <span class="w-2 h-2 bg-brand-brick rounded-full animate-pulse"></span>
+                        Contable • Legal • Financiera
+                    </span>
+                    <h1 class="text-4xl lg:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight drop-shadow-sm">
+                        Transformamos <br> regulaciones complejas en <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-brand-brick">tranquilidad operativa.</span>
+                    </h1>
+                    <p class="text-lg text-slate-200 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                        Más de 20 años blindando empresas en Venezuela. Evita riesgos fiscales y optimiza tu administración con una visión 360° que integra contabilidad, derecho tributario y economía.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#contacto" class="px-8 py-4 rounded-lg bg-brand-brick text-white font-bold hover:bg-red-800 transition shadow-lg shadow-red-900/30 text-center">
+                            Solicitar Asesoría Inicial
+                        </a>
+                        <a href="servicios.html" class="px-8 py-4 rounded-lg border-2 border-slate-500 text-slate-200 font-bold hover:bg-slate-800 hover:text-white hover:border-white transition text-center">
+                            Explorar Servicios
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-span-5 relative lg:ml-6">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-800 h-[500px]">
+                         <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Fabiola Rojas Profesionales" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition stock-img-filter">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-blue/95 to-transparent p-8">
+                            <p class="text-white font-bold text-lg">Lcda. Fabiola Rojas</p>
+                            <p class="text-slate-300 text-sm">Contador Público, Abogado y Economista</p>
+                        </div>
+                    </div>
+                     <div class="absolute -top-4 -right-4 w-32 h-32 bg-brand-brick/20 rounded-full blur-3xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative z-20 -mt-24 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-xl border-b-4 border-brand-brick hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 bg-red-50 rounded-lg flex items-center justify-center mb-6 text-brand-brick shadow-sm">
+                        <i class="ph ph-chart-line-up text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-blue mb-3">Gestión Financiera VEN-NIF</h3>
+                    <p class="text-slate-700 font-medium leading-relaxed">Estados financieros auditados, flujos de caja y análisis de rentabilidad para decisiones gerenciales seguras.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-xl border-b-4 border-brand-blue hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 bg-slate-100 rounded-lg flex items-center justify-center mb-6 text-brand-blue shadow-sm">
+                        <i class="ph ph-shield-check text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-blue mb-3">Blindaje Tributario</h3>
+                    <p class="text-slate-700 font-medium leading-relaxed">Auditoría preventiva y cumplimiento exacto de ISLR, IVA y municipales para evitar sanciones del SENIAT.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-xl border-b-4 border-brand-brick hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 bg-red-50 rounded-lg flex items-center justify-center mb-6 text-brand-brick shadow-sm">
+                        <i class="ph ph-users-three text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-blue mb-3">Outsourcing Laboral</h3>
+                    <p class="text-slate-700 font-medium leading-relaxed">Gestión integral de nómina, cumplimiento de la LOTTT y parafiscales (IVSS, INCES, FAOV).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="relative mb-12 lg:mb-0">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Análisis de documentos financieros complejos" class="rounded-2xl shadow-2xl stock-img-filter object-cover h-[450px] w-full border border-slate-100">
+                    <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-brand-brick rounded-xl -z-10 opacity-20"></div>
+                </div>
+                
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-brand-blue mb-6 leading-tight">
+                        ¿La gestión fiscal y administrativa frena el crecimiento de tu empresa?
+                    </h2>
+                    <p class="text-lg text-slate-700 mb-6 leading-relaxed font-medium">
+                        El entorno normativo en Venezuela es complejo y cambiante. El miedo a fiscalizaciones, el desorden en los libros contables o la falta de planificación financiera son los principales obstáculos.
+                    </p>
+                    <ul class="space-y-5 mb-8">
+                        <li class="flex items-start">
+                            <i class="ph ph-x-circle text-brand-brick text-2xl mr-3 mt-0.5"></i>
+                            <span class="text-slate-700 font-medium">Riesgo constante de multas por desconocimiento de nuevas leyes.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ph ph-x-circle text-brand-brick text-2xl mr-3 mt-0.5"></i>
+                            <span class="text-slate-700 font-medium">Falta de información financiera clara para tomar decisiones.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ph ph-x-circle text-brand-brick text-2xl mr-3 mt-0.5"></i>
+                            <span class="text-slate-700 font-medium">Procesos administrativos ineficientes que consumen tiempo.</span>
+                        </li>
+                    </ul>
+                    <p class="font-bold text-brand-blue text-lg">
+                        No tienes que enfrentarlo solo. Pasemos del caos a la claridad estratégica.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-gray border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+             <div class="text-center mb-16">
+                <span class="text-brand-brick font-bold uppercase tracking-wider text-sm">Nuestra Diferencia</span>
+                <h2 class="text-3xl lg:text-4xl font-bold text-brand-blue mt-2">Más que un contador, una aliada estratégica</h2>
+            </div>
+
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+                 <div class="col-span-6 mb-12 lg:mb-0 order-2 lg:order-1">
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        La contabilidad tradicional ya no es suficiente. Mi enfoque híbrido combina la precisión de la <strong>Contaduría</strong>, la visión estratégica de la <strong>Economía</strong> y el blindaje normativo del <strong>Derecho</strong>.
+                    </p>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Esto me permite no solo registrar tu pasado, sino entender tu presente legal y planificar tu futuro financiero, trabajando mano a mano con tu administración.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-brand-brick">
+                            <span class="block text-3xl font-extrabold text-brand-blue mb-1">20+</span>
+                            <span class="text-slate-600 text-sm font-medium">Años de experiencia en sector público y privado.</span>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-brand-blue">
+                            <span class="block text-3xl font-extrabold text-brand-blue mb-1">360°</span>
+                            <span class="text-slate-600 text-sm font-medium">Visión integral: Legal, Fiscal y Contable.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-6 relative order-1 lg:order-2">
+                     <div class="absolute -top-6 -right-6 w-24 h-24 bg-brand-blue rounded-xl -z-10 opacity-10"></div>
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Reunión estratégica de negocios" class="rounded-2xl shadow-xl stock-img-filter object-cover h-[450px] w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-slate-400 py-16 border-t-4 border-brand-brick">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-12">
+            <div>
+                <span class="text-white font-extrabold text-2xl mb-6 block tracking-tight">FABIOLA ROJAS</span>
+                <p class="text-sm mb-6 leading-relaxed text-slate-400">
+                    Consultoría integral contable, jurídica y financiera. Más de 20 años blindando empresas y garantizando su sostenibilidad en Venezuela.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="bg-slate-800 p-2 rounded hover:bg-brand-brick hover:text-white transition"><i class="ph ph-linkedin-logo text-xl"></i></a>
+                    <a href="#" class="bg-slate-800 p-2 rounded hover:bg-brand-brick hover:text-white transition"><i class="ph ph-instagram-logo text-xl"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-6 border-b border-slate-800 pb-2 inline-block">Servicios Rápidos</h3>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li><a href="servicios.html" class="hover:text-brand-brick transition flex items-center group"><i class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i> Auditoría Financiera</a></li>
+                    <li><a href="servicios.html" class="hover:text-brand-brick transition flex items-center group"><i class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i> Gestión Tributaria</a></li>
+                    <li><a href="servicios.html" class="hover:text-brand-brick transition flex items-center group"><i class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i> Nómina y Parafiscales</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-6 border-b border-slate-800 pb-2 inline-block">Contacto Directo</h3>
+                <ul class="space-y-5 text-sm">
+                    <li class="flex items-start">
+                        <div class="mt-1 bg-slate-800 p-2 rounded text-brand-brick mr-3"><i class="ph ph-phone-call text-lg"></i></div>
+                        <div>
+                            <span class="block text-slate-500 text-xs uppercase font-bold">Llámanos</span>
+                            <span class="text-white font-bold text-base">0414-1664241</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="mt-1 bg-slate-800 p-2 rounded text-brand-brick mr-3"><i class="ph ph-map-pin text-lg"></i></div>
+                        <div>
+                            <span class="block text-slate-500 text-xs uppercase font-bold">Oficina</span>
+                            <span class="text-white font-medium">Puerta Maraven, Urb. Manaure<br>Falcón, Venezuela</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-slate-800 text-sm flex flex-col md:flex-row justify-between items-center text-slate-500">
+            <p>© 2026 Fabiola Rojas. Todos los derechos reservados.</p>
+            <p class="mt-2 md:mt-0 font-mono text-xs opacity-70">C.P.C 88.365 | C.I 13.932.334</p>
+        </div>
+    </footer>
+
+</body>
+</html>

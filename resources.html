@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos y Formatos | Fabiola Rojas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0f172a',
+                            brick: '#b91c1c',
+                            gray: '#f1f5f9',
+                            dark: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Estilo para la tab activa */
+        .tab-active {
+            background-color: #0f172a; /* brand-blue */
+            color: white;
+            border-color: #0f172a;
+        }
+        .tab-inactive {
+            background-color: white;
+            color: #475569; /* slate-600 */
+            border-color: #e2e8f0; /* slate-200 */
+        }
+        .tab-inactive:hover {
+            border-color: #b91c1c; /* brand-brick */
+            color: #b91c1c;
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased bg-brand-gray">
+
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center gap-2">
+                        <span class="bg-brand-brick text-white p-2 rounded-md font-bold text-xl shadow-sm">FR</span>
+                        <div class="flex flex-col">
+                            <span class="font-bold text-brand-blue text-lg leading-none">FABIOLA ROJAS</span>
+                            <span class="text-xs text-slate-600 uppercase tracking-widest font-bold">Consultoría Integral</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home.html" class="text-slate-700 hover:text-brand-brick font-semibold transition">Inicio</a>
+                    <a href="about.html" class="text-slate-700 hover:text-brand-brick font-semibold transition">Sobre Mí</a>
+                    <a href="services.html" class="text-slate-700 hover:text-brand-brick font-semibold transition">Servicios</a>
+                    <a href="#" class="text-brand-blue font-bold transition border-b-2 border-brand-brick pb-1">Recursos</a>
+                    <a href="https://wa.me/584141664241" class="bg-brand-blue text-white px-5 py-2 rounded-md hover:bg-slate-800 transition flex items-center gap-2 font-bold shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        <i class="ph ph-whatsapp-logo text-lg"></i> Agenda tu Cita
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative bg-brand-blue pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden text-center">
+        <div class="absolute inset-0 opacity-[0.05]" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <span class="inline-block py-1 px-3 rounded bg-brand-brick/20 border border-brand-brick/40 text-red-200 text-xs font-bold uppercase tracking-wider mb-4">
+                Centro de Documentación
+            </span>
+            <h1 class="text-3xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">
+                Biblioteca de Formatos <br> y Modelos Legales.
+            </h1>
+            <p class="text-lg text-slate-200 mb-8 leading-relaxed font-medium max-w-2xl mx-auto">
+                Desde planillas del SENIAT hasta modelos de Actas Constitutivas. Herramientas listas para agilizar su gestión empresarial en Venezuela.
+            </p>
+        </div>
+    </section>
+
+    <div class="relative -mt-12 z-20 px-4 max-w-7xl mx-auto">
+        <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-200">
+            
+            <div class="flex flex-col md:flex-row gap-6 items-center justify-between">
+                <div class="flex flex-wrap gap-2 justify-center md:justify-start w-full md:w-auto" id="tabsContainer">
+                    <button onclick="switchTab('all')" class="tab-active px-5 py-2.5 rounded-full font-bold text-sm border transition shadow-sm" id="tab-all">Todos</button>
+                    <button onclick="switchTab('fiscal')" class="tab-inactive px-5 py-2.5 rounded-full font-bold text-sm border transition shadow-sm" id="tab-fiscal">Fiscal / Tributario</button>
+                    <button onclick="switchTab('laboral')" class="tab-inactive px-5 py-2.5 rounded-full font-bold text-sm border transition shadow-sm" id="tab-laboral">Laboral</button>
+                    <button onclick="switchTab('mercantil')" class="tab-inactive px-5 py-2.5 rounded-full font-bold text-sm border transition shadow-sm" id="tab-mercantil">Legal / Mercantil</button>
+                    <button onclick="switchTab('nuevos')" class="tab-inactive px-5 py-2.5 rounded-full font-bold text-sm border transition shadow-sm" id="tab-nuevos">Nuevos Clientes</button>
+                </div>
+
+                <div class="relative w-full md:w-80">
+                    <i class="ph ph-magnifying-glass absolute left-3 top-3 text-xl text-slate-400"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar formato..." class="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-300 focus:border-brand-blue focus:ring-2 focus:ring-blue-100 outline-none transition text-slate-700" onkeyup="filterResources()">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="pt-16 pb-24 bg-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div id="resourcesGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="resource-item bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition group hover:border-slate-500/50" data-category="mercantil legal acta constitutiva ca empresa registro">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="py-1 px-2 rounded bg-slate-100 text-slate-700 text-[10px] font-bold uppercase border border-slate-200">Mercantil</span>
+                        <i class="ph ph-file-doc text-2xl text-blue-800"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-brand-blue mb-1">Modelo Acta Constitutiva C.A.</h4>
+                    <p class="text-xs text-slate-500 mb-4 font-medium">Borrador estándar para constituir una Compañía Anónima en Venezuela.</p>
+                    <a href="#" class="flex items-center justify-between w-full py-2 px-4 bg-slate-50 rounded text-slate-700 font-bold text-sm hover:bg-slate-700 hover:text-white transition group-hover:shadow-sm">
+                        <span>Descargar Word</span>
+                        <i class="ph ph-download-simple"></i>
+                    </a>
+                </div>
+
+                <div class="resource-item bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition group hover:border-slate-500/50" data-category="mercantil legal firma personal fp registro">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="py-1 px-2 rounded bg-slate-100 text-slate-700 text-[10px] font-bold uppercase border border-slate-200">Mercantil</span>
+                        <i class="ph ph-file-doc text-2xl text-blue-800"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-brand-blue mb-1">Modelo Firma Personal (F.P.)</h4>
+                    <p class="text-xs text-slate-500 mb-4 font-medium">Documento base para registrarse como comerciante individual.</p>
+                    <a href="#" class="flex items-center justify-between w-full py-2 px-4 bg-slate-50 rounded text-slate-700 font-bold text-sm hover:bg-slate-700 hover:text-white transition group-hover:shadow-sm">
+                        <span>Descargar Word</span>
+                        <i class="ph ph-download-simple"></i>
+                    </a>
+                </div>
+
+                <div class="resource-item bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition group hover:border-slate-500/50" data-category="mercantil legal comisario carta aceptacion">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="py-1 px-2 rounded bg-slate-100 text-slate-700 text-[10px] font-bold uppercase border border-slate-200">Mercantil</span>
+                        <i class="ph ph-signature text-2xl text-brand-brick"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-brand-blue mb-1">Carta Aceptación Comisario</h4>
+                    <p class="text-xs text-slate-500 mb-4 font-medium">Requisito obligatorio CPC para el expediente del Registro Mercantil.</p>
+                    <a href="#" class="flex items-center justify-between w-full py-2 px-4 bg-slate-50 rounded text-slate-700 font-bold text-sm hover:bg-slate-700 hover:text-white transition group-hover:shadow-sm">
+                        <span>Descargar Modelo</span>
+                        <i class="ph ph-download-simple"></i>
+                    </a>
+                </div>
+
+                <div class="resource-item bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition group hover:border-slate-500/50" data-category="mercantil legal inventario apertura">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="py-1 px-2 rounded bg-slate-100 text-slate-700 text-[10px] font-bold uppercase border border-slate-200">Mercantil</span>
+                        <i class="ph ph-table text-2xl text-green-600"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-brand-blue mb-1">Inventario de Apertura</h4>
+                    <p class="text-xs text-slate-500 mb-4 font-medium">Formato de balance de inventario inicial para constitución de empresa.</p>
+                    <a href="#" class="flex items-center justify-between w-full py-2 px-4 bg-slate-50 rounded text-slate-700 font-bold text-sm hover:bg-slate-700 hover:text-white transition group-hover:shadow-sm">
+                        <span>Descargar Excel</span>
+                        <i class="ph ph-download-simple"></i>
+                    </a>
+                </div>
+
+                <div class="resource-item bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition group hover:border-brand-brick/30" data-category="fiscal tributario seniat islr ar-i">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="py-1 px-2 rounded bg-red-50 text-brand-brick text-[10px] font-bold uppercase border border-red-100">Fiscal</span>
+                        <i class="ph ph-file-xls text-2xl text-green-600"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-brand-blue mb-1">Planilla AR-I (Retenciones)</h4>
+                    <p class="text-xs text-slate-500 mb-4 font-medium">Estimación de retenciones ISLR para empleados bajo relación de dependencia.</p>
+                    <a href="#" class="flex items-center justify-between w-full py-2 px-4 bg-slate-50 rounded text-slate-700 font-bold text-sm hover:bg-brand-brick hover:text-white transition group-hover:shadow-sm">
+                        <span>Descargar Excel</span>
+                        <i class="ph ph-download-simple"></i>
+                    </a>
+                </div>
+
+                <div class="resource-item bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition group hover:border-brand-brick/30" data-category="fiscal tributario iva libro compras ventas">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="py-1 px-2 rounded bg-red-50 text-brand-brick text-[10px] font-bold uppercase border border-red-100">Fiscal</span>
+                        <i class="ph ph-file-xls text-2xl text-green-600"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-brand-blue mb-1">Libro de Compras y Ventas</h4>
+                    <p class="text-xs text-slate-500 mb-4 font-medium">Plantilla normativa para la relación mensual del IVA (Art. 72).</p>
+                    <a href="#" class="flex items-center justify-between w-full py-2 px-4 bg-slate-50 rounded text-slate-700 font-bold text-sm hover:bg-brand-brick hover:text-white transition group-hover:shadow-sm">
+                        <span>Descargar Excel</span>
+                        <i class="ph ph-download-simple"></i>
+                    </a>
+                </div>
+
+                <div class="resource-item bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition group hover:border-brand-brick/30" data-category="fiscal tributario igtf">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="py-1 px-2 rounded bg-red-50 text-brand-brick text-[10px] font-bold uppercase border border-red-100">Fiscal</span>
+                        <i class="ph ph-calculator text-2xl text-slate-600"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-brand-blue mb-1">Calculadora IGTF (3%)</h4>
+                    <p class="text-xs text-slate-500 mb-4 font-medium">Herramienta rápida para calcular el impuesto a grandes transacciones financieras.</p>
+                    <a href="#" class="flex items-center justify-between w-full py-2 px-4 bg-slate-50 rounded text-slate-700 font-bold text-sm hover:bg-brand-brick hover:text-white transition group-hover:shadow-sm">
+                        <span>Descargar Herramienta</span>
+                        <i class="ph ph-download-simple"></i>
+                    </a>
+                </div>
+
+                <div class="resource-item bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition group hover:border-brand-blue/30" data-category="laboral ivss 14-02 seguro social">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="py-1 px-2 rounded bg-blue-50 text-brand-blue text-[10px] font-bold uppercase border border-blue-100">Laboral</span>
+                        <i class="ph ph-file-pdf text-2xl text-red-500"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-brand-blue mb-1">Forma 14-02 (Registro IVSS)</h4>
+                    <p class="text-xs text-slate-500 mb-4 font-medium">Planilla oficial para inscripción de trabajador en el Seguro Social.</p>
+                    <a href="#" class="flex items-center justify-between w-full py-2 px-4 bg-slate-50 rounded text-slate-700 font-bold text-sm hover:bg-brand-blue hover:text-white transition group-hover:shadow-sm">
+                        <span>Descargar PDF</span>
+                        <i class="ph ph-download-simple"></i>
+                    </a>
+                </div>
+
+                <div class="resource-item bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition group hover:border-brand-blue/30" data-category="laboral faov banavih vivienda">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="py-1 px-2 rounded bg-blue-50 text-brand-blue text-[10px] font-bold uppercase border border-blue-100">Laboral</span>
+                        <i class="ph ph-file-pdf text-2xl text-red-500"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-brand-blue mb-1">Afiliación FAOV</h4>
+                    <p class="text-xs text-slate-500 mb-4 font-medium">Planilla para el Fondo de Ahorro Obligatorio para la Vivienda.</p>
+                    <a href="#" class="flex items-center justify-between w-full py-2 px-4 bg-slate-50 rounded text-slate-700 font-bold text-sm hover:bg-brand-blue hover:text-white transition group-hover:shadow-sm">
+                        <span>Descargar PDF</span>
+                        <i class="ph ph-download-simple"></i>
+                    </a>
+                </div>
+
+                <div class="resource-item bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition group hover:border-green-400/30" data-category="nuevos cliente ficha datos">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="py-1 px-2 rounded bg-green-50 text-green-700 text-[10px] font-bold uppercase border border-green-100">Nuevos Clientes</span>
+                        <i class="ph ph-user-plus text-2xl text-brand-blue"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-brand-blue mb-1">Ficha del Cliente</h4>
+                    <p class="text-xs text-slate-500 mb-4 font-medium">Formato interno para alta de cliente y facturación.</p>
+                    <a href="#" class="flex items-center justify-between w-full py-2 px-4 bg-slate-50 rounded text-slate-700 font-bold text-sm hover:bg-green-600 hover:text-white transition group-hover:shadow-sm">
+                        <span>Descargar Word</span>
+                        <i class="ph ph-download-simple"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="noResults" class="hidden text-center py-12">
+                <i class="ph ph-magnifying-glass text-4xl text-slate-300 mb-3"></i>
+                <h3 class="text-xl font-bold text-slate-600">No encontramos resultados.</h3>
+                <p class="text-slate-500">Intente cambiar el filtro o busque con otra palabra.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-slate-400 py-16 border-t-4 border-brand-brick">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-12">
+            <div>
+                <span class="text-white font-extrabold text-2xl mb-6 block tracking-tight">FABIOLA ROJAS</span>
+                <p class="text-sm mb-6 leading-relaxed text-slate-400">
+                    Consultoría integral contable, jurídica y financiera. Más de 20 años blindando empresas y garantizando su sostenibilidad en Venezuela.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="bg-slate-800 p-2 rounded hover:bg-brand-brick hover:text-white transition"><i class="ph ph-linkedin-logo text-xl"></i></a>
+                    <a href="#" class="bg-slate-800 p-2 rounded hover:bg-brand-brick hover:text-white transition"><i class="ph ph-instagram-logo text-xl"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-6 border-b border-slate-800 pb-2 inline-block">Enlaces de Interés</h3>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li><a href="servicios.html" class="hover:text-brand-brick transition flex items-center group"><i class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i> Servicios</a></li>
+                    <li><a href="#" class="text-white font-bold flex items-center group"><i class="ph ph-caret-right mr-2 text-brand-brick"></i> Centro de Descargas</a></li>
+                    <li><a href="sobre-mi.html" class="hover:text-brand-brick transition flex items-center group"><i class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i> Perfil Profesional</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-6 border-b border-slate-800 pb-2 inline-block">Contacto Directo</h3>
+                <ul class="space-y-5 text-sm">
+                    <li class="flex items-start">
+                        <div class="mt-1 bg-slate-800 p-2 rounded text-brand-brick mr-3"><i class="ph ph-phone-call text-lg"></i></div>
+                        <div>
+                            <span class="block text-slate-500 text-xs uppercase font-bold">Llámanos</span>
+                            <span class="text-white font-bold text-base">0414-1664241</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="mt-1 bg-slate-800 p-2 rounded text-brand-brick mr-3"><i class="ph ph-map-pin text-lg"></i></div>
+                        <div>
+                            <span class="block text-slate-500 text-xs uppercase font-bold">Oficina</span>
+                            <span class="text-white font-medium">Puerta Maraven, Urb. Manaure<br>Falcón, Venezuela</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-slate-800 text-sm flex flex-col md:flex-row justify-between items-center text-slate-500">
+            <p>© 2026 Fabiola Rojas. Todos los derechos reservados.</p>
+            <p class="mt-2 md:mt-0 font-mono text-xs opacity-70">C.P.C 88.365 | C.I 13.932.334</p>
+        </div>
+    </footer>
+
+    <script>
+        let activeTab = 'all';
+
+        function switchTab(tabName) {
+            activeTab = tabName;
+            
+            // 1. Actualizar estilos de botones
+            const buttons = document.querySelectorAll('#tabsContainer button');
+            buttons.forEach(btn => {
+                if(btn.id === `tab-${tabName}`) {
+                    btn.className = "tab-active px-5 py-2.5 rounded-full font-bold text-sm border transition shadow-sm";
+                } else {
+                    btn.className = "tab-inactive px-5 py-2.5 rounded-full font-bold text-sm border transition shadow-sm";
+                }
+            });
+
+            // 2. Ejecutar filtro
+            filterResources();
+        }
+
+        function filterResources() {
+            const searchText = document.getElementById('searchInput').value.toLowerCase();
+            const items = document.getElementsByClassName('resource-item');
+            const noResults = document.getElementById('noResults');
+            let visibleCount = 0;
+
+            for (let i = 0; i < items.length; i++) {
+                const item = items[i];
+                const category = item.getAttribute('data-category');
+                const title = item.getElementsByTagName("h4")[0].innerText.toLowerCase();
+
+                // Lógica: Debe coincidir con la Tab (o ser 'all') Y con el texto de búsqueda
+                const matchesTab = (activeTab === 'all') || category.includes(activeTab);
+                const matchesSearch = category.includes(searchText) || title.includes(searchText);
+
+                if (matchesTab && matchesSearch) {
+                    item.style.display = "";
+                    visibleCount++;
+                } else {
+                    item.style.display = "none";
+                }
+            }
+
+            // Mostrar mensaje si no hay resultados
+            if (visibleCount === 0) {
+                noResults.style.display = "block";
+            } else {
+                noResults.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

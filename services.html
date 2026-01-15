@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Fabiola Rojas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0f172a', /* Azul Oscuro Profundo */
+                            brick: '#b91c1c', /* Rojo Ladrillo Vibrante */
+                            gray: '#f1f5f9',  /* Gris un poco más oscuro que antes para contraste */
+                            dark: '#020617',  /* Casi negro para footer */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="text-slate-800 antialiased bg-brand-gray">
+
+    <nav class="bg-white shadow-md fixed w-full z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center gap-2">
+                        <span class="bg-brand-brick text-white p-2 rounded-md font-bold text-xl shadow-sm">FR</span>
+                        <div class="flex flex-col">
+                            <span class="font-bold text-brand-blue text-lg leading-none">FABIOLA ROJAS</span>
+                            <span class="text-xs text-slate-600 uppercase tracking-widest font-bold">Consultoría Integral</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home.html" class="text-slate-700 hover:text-brand-brick font-semibold transition">Inicio</a>
+                    <a href="about.html" class="text-slate-700 hover:text-brand-brick font-semibold transition">Sobre Mí</a>
+                    <a href="#" class="text-brand-blue font-bold transition border-b-2 border-brand-brick pb-1">Servicios</a>
+                    <a href="resources.html" class="text-slate-700 hover:text-brand-brick font-semibold transition">Recursos</a>
+                    <a href="https://wa.me/584141664241" class="bg-brand-blue text-white px-5 py-2 rounded-md hover:bg-slate-800 transition flex items-center gap-2 font-bold shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        <i class="ph ph-whatsapp-logo text-lg"></i> Agenda tu Cita
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative bg-brand-blue pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 32px 32px;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center lg:text-left">
+            <div class="lg:grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="inline-block py-1 px-3 rounded bg-brand-brick/20 border border-brand-brick/40 text-red-200 text-xs font-bold uppercase tracking-wider mb-4">
+                        Catálogo de Soluciones 2026
+                    </span>
+                    <h1 class="text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight drop-shadow-sm">
+                        Gestión 360°: <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-200">Legal, Contable y Fiscal.</span>
+                    </h1>
+                    <p class="text-lg text-slate-200 mb-8 leading-relaxed font-medium">
+                        No somos solo contadores. Somos su departamento de administración externo. Transformamos regulaciones complejas en procesos claros para su tranquilidad.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#detalles" class="px-7 py-3.5 bg-white text-brand-blue font-bold rounded-lg hover:bg-slate-100 transition shadow-lg shadow-blue-900/50">
+                            Explorar Servicios
+                        </a>
+                        <a href="#emprendedores" class="px-7 py-3.5 border-2 border-slate-400 text-slate-200 font-bold rounded-lg hover:text-white hover:border-white transition bg-brand-blue/50 backdrop-blur-sm">
+                            Soy Emprendedor
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block relative">
+                    <div class="absolute -inset-2 bg-gradient-to-tr from-brand-brick to-brand-blue rounded-2xl transform rotate-2 opacity-60"></div>
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Documentación Legal" class="relative rounded-xl shadow-2xl border border-slate-600/50">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-slate-200 border-y border-slate-300 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-xs font-black text-slate-500 uppercase tracking-widest mb-8">Tecnología y Normativa que Dominamos</p>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+                <span class="text-xl font-bold text-slate-700 flex items-center gap-2"><i class="ph ph-desktop text-brand-brick"></i> Saint</span>
+                <span class="text-xl font-bold text-slate-700 flex items-center gap-2"><i class="ph ph-desktop text-brand-brick"></i> SAF</span>
+                <span class="text-xl font-bold text-slate-700 flex items-center gap-2"><i class="ph ph-file-xls text-brand-brick"></i> Excel Pro</span>
+                <span class="text-xl font-bold text-slate-700 flex items-center gap-2"><i class="ph ph-bank text-brand-brick"></i> VEN-NIF</span>
+                <span class="text-xl font-bold text-slate-700 flex items-center gap-2"><i class="ph ph-gavel text-brand-brick"></i> LOTTT</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="detalles" class="py-24 bg-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-28">
+
+            <div class="lg:grid lg:grid-cols-12 gap-12 items-start">
+                <div class="col-span-4 sticky top-28">
+                    <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg shadow-red-200">
+                        <i class="ph ph-shield-check text-3xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-extrabold text-brand-blue mb-4 leading-tight">Gestión Tributaria y <span class="text-brand-brick">Blindaje Fiscal</span></h2>
+                    <p class="text-slate-700 font-medium mb-6 leading-relaxed">
+                        La prevención es su mejor inversión. Auditamos y gestionamos sus obligaciones para evitar sanciones del SENIAT y Alcaldías.
+                    </p>
+                    <a href="https://wa.me/584141664241" class="text-brand-brick font-bold hover:text-red-800 flex items-center text-lg group">
+                        Consultar Caso Fiscal <i class="ph ph-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                    </a>
+                </div>
+                <div class="col-span-8 grid sm:grid-cols-2 gap-6">
+                    <div class="bg-white p-7 rounded-xl shadow-md border border-slate-200 hover:border-brand-brick/30 transition duration-300">
+                        <h4 class="font-bold text-brand-blue text-lg mb-3 flex items-center"><i class="ph ph-files mr-2 text-brand-brick"></i> Impuestos Nacionales</h4>
+                        <ul class="text-sm font-medium text-slate-700 space-y-3">
+                            <li class="flex items-start"><span class="text-brand-brick mr-2">•</span> Declaración de I.V.A. e I.S.L.R.</li>
+                            <li class="flex items-start"><span class="text-brand-brick mr-2">•</span> Gestión del IGTF.</li>
+                            <li class="flex items-start"><span class="text-brand-brick mr-2">•</span> Retenciones de ISLR e IVA.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-7 rounded-xl shadow-md border border-slate-200 hover:border-brand-brick/30 transition duration-300">
+                        <h4 class="font-bold text-brand-blue text-lg mb-3 flex items-center"><i class="ph ph-coin mr-2 text-brand-brick"></i> Contribuciones Especiales</h4>
+                        <ul class="text-sm font-medium text-slate-700 space-y-3">
+                            <li class="flex items-start"><span class="text-brand-brick mr-2">•</span> Ley de Deporte y LOCTI.</li>
+                            <li class="flex items-start"><span class="text-brand-brick mr-2">•</span> Declaraciones FONACIT.</li>
+                            <li class="flex items-start"><span class="text-brand-brick mr-2">•</span> Nueva Contribución Pensiones.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-7 rounded-xl shadow-md border border-slate-200 sm:col-span-2 hover:border-brand-brick/30 transition duration-300">
+                        <h4 class="font-bold text-brand-blue text-lg mb-3 flex items-center"><i class="ph ph-buildings mr-2 text-brand-brick"></i> Municipal y Parafiscal</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <ul class="text-sm font-medium text-slate-700 space-y-3">
+                                <li class="flex items-start"><span class="text-brand-blue mr-2">✓</span> Patente de Industria.</li>
+                                <li class="flex items-start"><span class="text-brand-blue mr-2">✓</span> Inmuebles Urbanos.</li>
+                            </ul>
+                            <ul class="text-sm font-medium text-slate-700 space-y-3">
+                                <li class="flex items-start"><span class="text-brand-blue mr-2">✓</span> RUPDAE y SADA.</li>
+                                <li class="flex items-start"><span class="text-brand-blue mr-2">✓</span> Licencias Económicas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full h-px bg-slate-300"></div>
+
+            <div class="lg:grid lg:grid-cols-12 gap-12 items-start">
+                <div class="col-span-4 sticky top-28">
+                    <div class="w-16 h-16 bg-brand-blue rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg shadow-blue-200">
+                        <i class="ph ph-chart-line-up text-3xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-extrabold text-brand-blue mb-4 leading-tight">Contabilidad y Finanzas <span class="text-blue-600">VEN-NIF</span></h2>
+                    <p class="text-slate-700 font-medium mb-6">
+                        Transformamos datos en información estratégica. Cumplimiento estricto de Normas Internacionales para PYMES.
+                    </p>
+                </div>
+                <div class="col-span-8 grid sm:grid-cols-2 gap-6">
+                    <div class="bg-white p-7 rounded-xl shadow-md border border-slate-200">
+                        <h4 class="font-bold text-brand-blue text-lg mb-3">Auditoría y Aseguramiento</h4>
+                        <ul class="text-sm font-medium text-slate-700 space-y-3">
+                            <li class="flex items-start"><i class="ph ph-check-circle text-brand-blue mr-2 mt-0.5"></i> Auditoría de Estados Financieros.</li>
+                            <li class="flex items-start"><i class="ph ph-check-circle text-brand-blue mr-2 mt-0.5"></i> Certificación de Ingresos.</li>
+                            <li class="flex items-start"><i class="ph ph-check-circle text-brand-blue mr-2 mt-0.5"></i> Auditoría Operativa.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-7 rounded-xl shadow-md border border-slate-200">
+                        <h4 class="font-bold text-brand-blue text-lg mb-3">Costos y Precios (SUNDE)</h4>
+                        <ul class="text-sm font-medium text-slate-700 space-y-3">
+                            <li class="flex items-start"><i class="ph ph-check-circle text-brand-blue mr-2 mt-0.5"></i> Estructuras de Costos.</li>
+                            <li class="flex items-start"><i class="ph ph-check-circle text-brand-blue mr-2 mt-0.5"></i> Análisis de Inventarios.</li>
+                            <li class="flex items-start"><i class="ph ph-check-circle text-brand-blue mr-2 mt-0.5"></i> Determinación Precios Justos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full h-px bg-slate-300"></div>
+
+            <div class="lg:grid lg:grid-cols-12 gap-12 items-start">
+                <div class="col-span-4 sticky top-28">
+                    <div class="w-16 h-16 bg-slate-800 rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg">
+                        <i class="ph ph-briefcase text-3xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-extrabold text-brand-blue mb-4 leading-tight">Gestión Laboral y <span class="text-slate-500">Legal</span></h2>
+                    <p class="text-slate-700 font-medium mb-6">
+                        Tercerice su departamento de RRHH. Garantizamos la paz laboral y el cumplimiento de la LOTTT.
+                    </p>
+                </div>
+                <div class="col-span-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-slate-200 mb-6">
+                        <div class="grid sm:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-brand-blue mb-4 border-b-2 border-slate-100 pb-2">Gestión de Nómina</h4>
+                                <ul class="text-sm font-medium text-slate-700 space-y-3">
+                                    <li class="flex items-start"><i class="ph ph-users text-brand-brick mr-2"></i> Cálculos de Nómina.</li>
+                                    <li class="flex items-start"><i class="ph ph-users text-brand-brick mr-2"></i> Utilidades y Vacaciones.</li>
+                                    <li class="flex items-start"><i class="ph ph-users text-brand-brick mr-2"></i> Prestaciones Sociales.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-blue mb-4 border-b-2 border-slate-100 pb-2">Parafiscales</h4>
+                                <ul class="text-sm font-medium text-slate-700 space-y-3">
+                                    <li class="flex items-start"><i class="ph ph-building-office text-brand-brick mr-2"></i> IVSS (Seguro Social).</li>
+                                    <li class="flex items-start"><i class="ph ph-building-office text-brand-brick mr-2"></i> FAOV (Banavih).</li>
+                                    <li class="flex items-start"><i class="ph ph-building-office text-brand-brick mr-2"></i> INCES y MINPPTRASS.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="emprendedores" class="py-24 bg-gradient-to-b from-white to-blue-50 border-y border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 text-center mb-16">
+             <span class="inline-block py-1.5 px-4 rounded-full bg-green-100 text-green-800 text-xs font-black tracking-wider mb-6 shadow-sm">
+                ESPECIAL PARA NUEVOS NEGOCIOS
+             </span>
+            <h2 class="text-4xl font-extrabold text-brand-blue mb-4">Kit de Formalización Empresarial</h2>
+            <p class="text-slate-700 font-medium text-lg max-w-2xl mx-auto">
+                Todo lo que necesita para operar legalmente desde el día 1 en Venezuela, empaquetado para su conveniencia.
+            </p>
+        </div>
+        
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div class="p-8 bg-white rounded-2xl border border-slate-200 text-center relative hover:shadow-xl hover:border-brand-brick/50 transition duration-300">
+                <div class="w-14 h-14 bg-brand-brick text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-6 shadow-md shadow-red-200">1</div>
+                <h4 class="font-bold text-brand-blue text-xl mb-3">Constitución Legal</h4>
+                <p class="text-sm text-slate-600 font-medium">Redacción de documento constitutivo, Registro Mercantil y publicación.</p>
+            </div>
+            <div class="p-8 bg-white rounded-2xl border border-slate-200 text-center relative hover:shadow-xl hover:border-brand-brick/50 transition duration-300">
+                <div class="w-14 h-14 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-6 shadow-md shadow-blue-200">2</div>
+                <h4 class="font-bold text-brand-blue text-xl mb-3">Registros Fiscales</h4>
+                <p class="text-sm text-slate-600 font-medium">Obtención de RIF Jurídico, Libros Contables y sellado oficial.</p>
+            </div>
+            <div class="p-8 bg-white rounded-2xl border border-slate-200 text-center relative hover:shadow-xl hover:border-brand-brick/50 transition duration-300">
+                <div class="w-14 h-14 bg-slate-700 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-6 shadow-md">3</div>
+                <h4 class="font-bold text-brand-blue text-xl mb-3">Permisología</h4>
+                <p class="text-sm text-slate-600 font-medium">Inscripción en IVSS, INCES, FAOV y Alcaldía correspondiente.</p>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <a href="https://wa.me/584141664241?text=Hola,%20me%20interesa%20el%20Paquete%20para%20Emprendedores" class="inline-flex items-center justify-center px-8 py-4 bg-brand-brick text-white font-bold rounded-lg hover:bg-red-800 transition shadow-lg">
+                Solicitar Cotización de Paquete <i class="ph ph-whatsapp-logo ml-2 text-xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-slate-400 py-16 border-t-4 border-brand-brick">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-12">
+            <div>
+                <span class="text-white font-extrabold text-2xl mb-6 block tracking-tight">FABIOLA ROJAS</span>
+                <p class="text-sm mb-6 leading-relaxed text-slate-400">
+                    Consultoría integral contable, jurídica y financiera. Más de 20 años blindando empresas y garantizando su sostenibilidad en Venezuela.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="bg-slate-800 p-2 rounded hover:bg-brand-brick hover:text-white transition"><i class="ph ph-linkedin-logo text-xl"></i></a>
+                    <a href="#" class="bg-slate-800 p-2 rounded hover:bg-brand-brick hover:text-white transition"><i class="ph ph-instagram-logo text-xl"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-white font-bold text-lg mb-6 border-b border-slate-800 pb-2 inline-block">Servicios Rápidos</h3>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li><a href="#" class="hover:text-brand-brick transition flex items-center group"><i class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i> Auditoría Financiera</a></li>
+                    <li><a href="#" class="hover:text-brand-brick transition flex items-center group"><i class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i> Gestión Tributaria (ISLR/IVA)</a></li>
+                    <li><a href="#" class="hover:text-brand-brick transition flex items-center group"><i class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i> Nómina y Parafiscales</a></li>
+                    <li><a href="#" class="hover:text-brand-brick transition flex items-center group"><i class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i> Constitución de Empresas</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-white font-bold text-lg mb-6 border-b border-slate-800 pb-2 inline-block">Contacto Directo</h3>
+                <ul class="space-y-5 text-sm">
+                    <li class="flex items-start">
+                        <div class="mt-1 bg-slate-800 p-2 rounded text-brand-brick mr-3"><i class="ph ph-phone-call text-lg"></i></div>
+                        <div>
+                            <span class="block text-slate-500 text-xs uppercase font-bold">Llámanos</span>
+                            <span class="text-white font-bold text-base">0414-1664241</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="mt-1 bg-slate-800 p-2 rounded text-brand-brick mr-3"><i class="ph ph-envelope-simple text-lg"></i></div>
+                        <div>
+                            <span class="block text-slate-500 text-xs uppercase font-bold">Correo</span>
+                            <span class="text-white font-medium">fabilar41@gmail.com</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="mt-1 bg-slate-800 p-2 rounded text-brand-brick mr-3"><i class="ph ph-map-pin text-lg"></i></div>
+                        <div>
+                            <span class="block text-slate-500 text-xs uppercase font-bold">Oficina</span>
+                            <span class="text-white font-medium">Puerta Maraven, Urb. Manaure<br>Falcón, Venezuela</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-slate-800 text-sm flex flex-col md:flex-row justify-between items-center text-slate-500">
+            <p>© 2026 Fabiola Rojas. Todos los derechos reservados.</p>
+            <p class="mt-2 md:mt-0 font-mono text-xs opacity-70">C.P.C 88.365 | C.I 13.932.334</p>
+        </div>
+    </footer>
+
+</body>
+</html>
