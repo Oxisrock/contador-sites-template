@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,8 +38,14 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .stock-img-filter { filter: sepia(5%) contrast(105%) brightness(95%); }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .stock-img-filter {
+            filter: sepia(5%) contrast(105%) brightness(95%);
+        }
+
         /* Efecto de desvanecimiento en los bordes del slider */
         .mask-linear-fade {
             mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
@@ -46,6 +53,7 @@
         }
     </style>
 </head>
+
 <body class="text-slate-800 antialiased bg-brand-gray">
 
     <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-50 border-b border-slate-200">
@@ -56,16 +64,22 @@
                         <span class="bg-brand-brick text-white p-2 rounded-md font-bold text-xl shadow-sm">FR</span>
                         <div class="flex flex-col">
                             <span class="font-bold text-brand-blue text-lg leading-none">FABIOLA ROJAS</span>
-                            <span class="text-xs text-slate-600 uppercase tracking-widest font-bold">Consultoría Integral</span>
+                            <span class="text-xs text-slate-600 uppercase tracking-widest font-bold">Consultoría
+                                Integral</span>
                         </div>
                     </div>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-slate-700 hover:text-brand-brick font-semibold transition">Inicio</a>
-                    <a href="#" class="text-brand-blue font-bold transition border-b-2 border-brand-brick pb-1">Sobre Mí</a>
-                    <a href="services.html" class="text-slate-700 hover:text-brand-brick font-semibold transition">Servicios</a>
-                    <a href="resources.html" class="text-slate-700 hover:text-brand-brick font-semibold transition">Recursos</a>
-                    <a href="https://wa.me/584141664241" class="bg-brand-blue text-white px-5 py-2 rounded-md hover:bg-slate-800 transition flex items-center gap-2 font-bold shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                    <a href="index.html"
+                        class="text-slate-700 hover:text-brand-brick font-semibold transition">Inicio</a>
+                    <a href="#" class="text-brand-blue font-bold transition border-b-2 border-brand-brick pb-1">Sobre
+                        Mí</a>
+                    <a href="services.html"
+                        class="text-slate-700 hover:text-brand-brick font-semibold transition">Servicios</a>
+                    <a href="resources.html"
+                        class="text-slate-700 hover:text-brand-brick font-semibold transition">Recursos</a>
+                    <a href="https://wa.me/584141664241"
+                        class="bg-brand-blue text-white px-5 py-2 rounded-md hover:bg-slate-800 transition flex items-center gap-2 font-bold shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                         <i class="ph ph-whatsapp-logo text-lg"></i> Agenda tu Cita
                     </a>
                 </div>
@@ -74,18 +88,21 @@
     </nav>
 
     <section class="relative bg-brand-blue pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
-        <div class="absolute inset-0 opacity-[0.05]" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+        <div class="absolute inset-0 opacity-[0.05]"
+            style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
                 <div class="col-span-7 mb-10 lg:mb-0">
-                    <span class="text-brand-brick font-bold uppercase tracking-wider text-sm mb-2 block">Mi Perfil Profesional</span>
+                    <span class="text-brand-brick font-bold uppercase tracking-wider text-sm mb-2 block">Mi Perfil
+                        Profesional</span>
                     <h1 class="text-3xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">
                         La visión de una economista, <br>
                         la precisión de una contadora <br>
                         <span class="text-slate-400">y la estrategia de una abogada.</span>
                     </h1>
                     <p class="text-lg text-slate-200 mb-8 max-w-2xl leading-relaxed font-medium">
-                        Soy <strong>Fabiola del Carmen Rojas de García</strong>. Mi carrera comenzó en las entrañas del sistema tributario (SENIAT) y evolucionó hacia la consultoría gerencial.
+                        Soy <strong>Fabiola del Carmen Rojas de García</strong>. Mi carrera comenzó en las entrañas del
+                        sistema tributario (SENIAT) y evolucionó hacia la consultoría gerencial.
                     </p>
                     <div class="flex flex-wrap gap-6 border-t border-slate-700 pt-6">
                         <div>
@@ -100,9 +117,11 @@
                     </div>
                 </div>
                 <div class="col-span-5 relative">
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-800 h-[500px]">
-                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Fabiola Rojas Perfil" class="w-full h-full object-cover stock-img-filter opacity-90 hover:opacity-100 transition">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-blue/95 to-transparent p-8">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-800">
+                        <img src="assets/images/15.jpg" alt="Fabiola Rojas Perfil"
+                            class="w-full h-auto object-cover stock-img-filter opacity-90 hover:opacity-100 transition">
+                        <div
+                            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-blue/95 to-transparent p-8">
                             <p class="text-white font-bold text-lg">20+ Años de Experiencia</p>
                             <p class="text-slate-300 text-sm">Sector Público y Privado</p>
                         </div>
@@ -138,9 +157,11 @@
     <section class="py-24 bg-brand-gray">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-md border border-slate-200 border-t-4 border-t-brand-blue hover:-translate-y-1 transition-transform">
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md border border-slate-200 border-t-4 border-t-brand-blue hover:-translate-y-1 transition-transform">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-brand-blue mr-4">
+                        <div
+                            class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-brand-blue mr-4">
                             <i class="ph ph-graduation-cap text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold text-brand-blue">Formación Académica</h3>
@@ -162,16 +183,21 @@
                         </li>
                     </ul>
                 </div>
-                
-                <div class="bg-white p-8 rounded-xl shadow-md border border-slate-200 border-t-4 border-t-brand-brick relative overflow-hidden group hover:-translate-y-1 transition-transform">
-                    <div class="absolute top-0 right-0 bg-brand-brick text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wide">Publicación 2025</div>
+
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md border border-slate-200 border-t-4 border-t-brand-brick relative overflow-hidden group hover:-translate-y-1 transition-transform">
+                    <div
+                        class="absolute top-0 right-0 bg-brand-brick text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wide">
+                        Publicación 2025</div>
                     <div class="flex flex-col sm:flex-row gap-6 items-center h-full">
-                        <div class="w-24 h-32 bg-brand-blue shadow-lg flex-shrink-0 flex items-center justify-center text-center p-1 rounded border border-slate-600 group-hover:scale-105 transition duration-300">
+                        <div
+                            class="w-24 h-32 bg-brand-blue shadow-lg flex-shrink-0 flex items-center justify-center text-center p-1 rounded border border-slate-600 group-hover:scale-105 transition duration-300">
                             <span class="text-white text-[10px] font-serif leading-tight opacity-80">BEPS 2.0</span>
                         </div>
                         <div>
                             <h3 class="text-lg font-bold text-brand-blue mb-2">Coautora: Tributación Internacional</h3>
-                            <p class="text-sm text-slate-600 mb-4 font-medium">Comisión Interamericana de Contadores Públicos.</p>
+                            <p class="text-sm text-slate-600 mb-4 font-medium">Comisión Interamericana de Contadores
+                                Públicos.</p>
                         </div>
                     </div>
                 </div>
@@ -180,88 +206,104 @@
     </section>
 
     <section class="py-12 bg-white border-y border-slate-200 overflow-hidden relative z-10">
-    
+
         <div class="max-w-7xl mx-auto px-4 mb-8 text-center">
             <span class="text-brand-brick font-bold uppercase tracking-widest text-xs">Confianza Corporativa</span>
             <h3 class="text-2xl font-bold text-brand-blue mt-2">Empresas que respaldan nuestra gestión</h3>
         </div>
-    
+
         <div class="relative w-full mask-linear-fade">
             <div class="flex overflow-hidden space-x-16 group">
-                
-                <div class="flex space-x-16 animate-infinite-scroll min-w-full flex-shrink-0 justify-around items-center group-hover:paused">
-                    
-                    <div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
+
+                <div
+                    class="flex space-x-16 animate-infinite-scroll min-w-full flex-shrink-0 justify-around items-center group-hover:paused">
+
+                    <div
+                        class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
                         <i class="ph ph-beer-bottle text-4xl text-blue-800"></i>
                         <div class="flex flex-col">
                             <span class="text-lg font-black text-slate-800 leading-none">EMPRESAS</span>
                             <span class="text-sm font-bold text-blue-800 tracking-wider leading-none">POLAR</span>
                         </div>
                     </div>
-    
-                    <div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
+
+                    <div
+                        class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
                         <i class="ph ph-globe-hemisphere-west text-4xl text-green-700"></i>
                         <span class="text-xl font-bold text-slate-700 tracking-wide">VECOINTER</span>
                     </div>
-    
-                    <div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
+
+                    <div
+                        class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
                         <i class="ph ph-buildings text-4xl text-orange-600"></i>
                         <div class="flex flex-col">
                             <span class="text-lg font-black text-slate-800 leading-none">CIMIENTOS</span>
-                            <span class="text-[10px] font-bold text-orange-600 tracking-widest uppercase">Venezuela</span>
+                            <span
+                                class="text-[10px] font-bold text-orange-600 tracking-widest uppercase">Venezuela</span>
                         </div>
                     </div>
-    
-                    <div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
+
+                    <div
+                        class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
                         <i class="ph ph-graduation-cap text-4xl text-brand-brick"></i>
                         <span class="text-xl font-serif font-bold text-slate-700">I.E. Arismendi</span>
                     </div>
-    
-                    <div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
+
+                    <div
+                        class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
                         <i class="ph ph-briefcase-metal text-4xl text-slate-600"></i>
                         <span class="text-xl font-bold text-slate-700">MEHIR C.A.</span>
                     </div>
-    
-                    <div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
+
+                    <div
+                        class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
                         <i class="ph ph-cube text-4xl text-purple-700"></i>
                         <span class="text-xl font-bold text-slate-700">UNIKOS</span>
                     </div>
-    
+
                 </div>
-    
-                <div class="flex space-x-16 animate-infinite-scroll min-w-full flex-shrink-0 justify-around items-center group-hover:paused" aria-hidden="true">
-                    
-                    <div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
+
+                <div class="flex space-x-16 animate-infinite-scroll min-w-full flex-shrink-0 justify-around items-center group-hover:paused"
+                    aria-hidden="true">
+
+                    <div
+                        class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
                         <i class="ph ph-beer-bottle text-4xl text-blue-800"></i>
                         <div class="flex flex-col">
                             <span class="text-lg font-black text-slate-800 leading-none">EMPRESAS</span>
                             <span class="text-sm font-bold text-blue-800 tracking-wider leading-none">POLAR</span>
                         </div>
                     </div>
-                    <div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
+                    <div
+                        class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
                         <i class="ph ph-globe-hemisphere-west text-4xl text-green-700"></i>
                         <span class="text-xl font-bold text-slate-700 tracking-wide">VECOINTER</span>
                     </div>
-                    <div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
+                    <div
+                        class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
                         <i class="ph ph-buildings text-4xl text-orange-600"></i>
                         <div class="flex flex-col">
                             <span class="text-lg font-black text-slate-800 leading-none">CIMIENTOS</span>
-                            <span class="text-[10px] font-bold text-orange-600 tracking-widest uppercase">Venezuela</span>
+                            <span
+                                class="text-[10px] font-bold text-orange-600 tracking-widest uppercase">Venezuela</span>
                         </div>
                     </div>
-                    <div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
+                    <div
+                        class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
                         <i class="ph ph-graduation-cap text-4xl text-brand-brick"></i>
                         <span class="text-xl font-serif font-bold text-slate-700">I.E. Arismendi</span>
                     </div>
-                    <div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
+                    <div
+                        class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
                         <i class="ph ph-briefcase-metal text-4xl text-slate-600"></i>
                         <span class="text-xl font-bold text-slate-700">MEHIR C.A.</span>
                     </div>
-                    <div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
+                    <div
+                        class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300 cursor-pointer">
                         <i class="ph ph-cube text-4xl text-purple-700"></i>
                         <span class="text-xl font-bold text-slate-700">UNIKOS</span>
                     </div>
-    
+
                 </div>
             </div>
         </div>
@@ -272,34 +314,42 @@
             <div class="lg:grid lg:grid-cols-2 gap-16 items-center">
                 <div>
                     <span class="text-brand-brick font-bold uppercase tracking-wider text-sm">Mi Enfoque</span>
-                    <h2 class="text-3xl font-extrabold text-brand-blue mt-2 mb-6">Más allá de los números: Ética y Comunicación</h2>
+                    <h2 class="text-3xl font-extrabold text-brand-blue mt-2 mb-6">Más allá de los números: Ética y
+                        Comunicación</h2>
                     <p class="text-slate-700 mb-6 leading-relaxed font-medium">
-                        Entiendo que detrás de cada libro contable hay una organización humana. Gracias a mi formación en <strong>Coaching y PNL</strong>, no solo entrego informes fríos; facilito la comunicación entre departamentos y transformo la cultura administrativa de tu empresa.
+                        Entiendo que detrás de cada libro contable hay una organización humana. Gracias a mi formación
+                        en <strong>Coaching y PNL</strong>, no solo entrego informes fríos; facilito la comunicación
+                        entre departamentos y transformo la cultura administrativa de tu empresa.
                     </p>
                     <div class="space-y-6">
                         <div class="flex items-start">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center mt-1 mr-4">
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center mt-1 mr-4">
                                 <i class="ph ph-handshake text-brand-blue text-xl"></i>
                             </div>
                             <div>
                                 <h4 class="font-bold text-brand-blue text-lg">Aliada, no externa</h4>
-                                <p class="text-sm text-slate-600 font-medium">Me integro con tu equipo administrativo para resolver problemas desde la raíz.</p>
+                                <p class="text-sm text-slate-600 font-medium">Me integro con tu equipo administrativo
+                                    para resolver problemas desde la raíz.</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-red-50 flex items-center justify-center mt-1 mr-4">
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-red-50 flex items-center justify-center mt-1 mr-4">
                                 <i class="ph ph-plant text-brand-brick text-xl"></i>
                             </div>
                             <div>
                                 <h4 class="font-bold text-brand-blue text-lg">Sostenibilidad Empresarial</h4>
-                                <p class="text-sm text-slate-600 font-medium">Estrategias diseñadas para la longevidad y salud financiera de tu negocio.</p>
+                                <p class="text-sm text-slate-600 font-medium">Estrategias diseñadas para la longevidad y
+                                    salud financiera de tu negocio.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="relative mt-12 lg:mt-0">
                     <div class="absolute -inset-4 bg-white rounded-xl transform rotate-2 border border-slate-200"></div>
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Reunión de equipo" class="relative rounded-xl shadow-lg w-full stock-img-filter border border-slate-100">
+                    <img src="assets/images/18.jpg" alt="Reunión de equipo"
+                        class="relative rounded-xl shadow-lg w-full stock-img-filter border border-slate-100">
                 </div>
             </div>
         </div>
@@ -312,17 +362,24 @@
             </div>
             <div class="relative pl-8 border-l-2 border-slate-300 space-y-12">
                 <div class="relative">
-                    <span class="absolute top-6 -left-[41px] bg-brand-brick h-5 w-5 rounded-full border-4 border-brand-gray shadow-sm"></span>
-                    <div class="bg-brand-gray p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <span class="text-brand-brick text-xs font-bold mb-2 block tracking-wider uppercase">2017 - Actualidad</span>
+                    <span
+                        class="absolute top-6 -left-[41px] bg-brand-brick h-5 w-5 rounded-full border-4 border-brand-gray shadow-sm"></span>
+                    <div
+                        class="bg-brand-gray p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                        <span class="text-brand-brick text-xs font-bold mb-2 block tracking-wider uppercase">2017 -
+                            Actualidad</span>
                         <h3 class="text-xl font-bold text-brand-blue">Auditora Independiente</h3>
-                        <p class="text-slate-700 text-sm mt-2 font-medium">Clientes: Cimientos de Venezuela, Distribuidora Katty (Polar).</p>
+                        <p class="text-slate-700 text-sm mt-2 font-medium">Clientes: Cimientos de Venezuela,
+                            Distribuidora Katty (Polar).</p>
                     </div>
                 </div>
                 <div class="relative">
-                    <span class="absolute top-6 -left-[41px] bg-slate-400 h-5 w-5 rounded-full border-4 border-brand-gray shadow-sm"></span>
-                    <div class="bg-brand-gray p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <span class="text-slate-500 text-xs font-bold mb-2 block tracking-wider uppercase">2015 - 2016</span>
+                    <span
+                        class="absolute top-6 -left-[41px] bg-slate-400 h-5 w-5 rounded-full border-4 border-brand-gray shadow-sm"></span>
+                    <div
+                        class="bg-brand-gray p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                        <span class="text-slate-500 text-xs font-bold mb-2 block tracking-wider uppercase">2015 -
+                            2016</span>
                         <h3 class="text-xl font-bold text-brand-blue">Sala Técnica - Colegio de Contadores</h3>
                         <p class="text-slate-600 text-sm mt-2">Estado Lara, Venezuela.</p>
                     </div>
@@ -336,46 +393,62 @@
             <div>
                 <span class="text-white font-extrabold text-2xl mb-6 block tracking-tight">FABIOLA ROJAS</span>
                 <p class="text-sm mb-6 leading-relaxed text-slate-400">
-                    Consultoría integral contable, jurídica y financiera. Más de 20 años blindando empresas y garantizando su sostenibilidad en Venezuela.
+                    Consultoría integral contable, jurídica y financiera. Más de 20 años blindando empresas y
+                    garantizando su sostenibilidad en Venezuela.
                 </p>
                 <div class="flex gap-4">
-                    <a href="#" class="bg-slate-800 p-2 rounded hover:bg-brand-brick hover:text-white transition"><i class="ph ph-linkedin-logo text-xl"></i></a>
-                    <a href="#" class="bg-slate-800 p-2 rounded hover:bg-brand-brick hover:text-white transition"><i class="ph ph-instagram-logo text-xl"></i></a>
+                    <a href="#" class="bg-slate-800 p-2 rounded hover:bg-brand-brick hover:text-white transition"><i
+                            class="ph ph-linkedin-logo text-xl"></i></a>
+                    <a href="#" class="bg-slate-800 p-2 rounded hover:bg-brand-brick hover:text-white transition"><i
+                            class="ph ph-instagram-logo text-xl"></i></a>
                 </div>
             </div>
             <div>
-                <h3 class="text-white font-bold text-lg mb-6 border-b border-slate-800 pb-2 inline-block">Servicios Rápidos</h3>
+                <h3 class="text-white font-bold text-lg mb-6 border-b border-slate-800 pb-2 inline-block">Servicios
+                    Rápidos</h3>
                 <ul class="space-y-3 text-sm font-medium">
-                    <li><a href="servicios.html" class="hover:text-brand-brick transition flex items-center group"><i class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i> Auditoría Financiera</a></li>
-                    <li><a href="servicios.html" class="hover:text-brand-brick transition flex items-center group"><i class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i> Gestión Tributaria</a></li>
-                    <li><a href="servicios.html" class="hover:text-brand-brick transition flex items-center group"><i class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i> Nómina y Parafiscales</a></li>
+                    <li><a href="servicios.html" class="hover:text-brand-brick transition flex items-center group"><i
+                                class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i>
+                            Auditoría Financiera</a></li>
+                    <li><a href="servicios.html" class="hover:text-brand-brick transition flex items-center group"><i
+                                class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i> Gestión
+                            Tributaria</a></li>
+                    <li><a href="servicios.html" class="hover:text-brand-brick transition flex items-center group"><i
+                                class="ph ph-caret-right mr-2 text-slate-600 group-hover:text-brand-brick"></i> Nómina y
+                            Parafiscales</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-white font-bold text-lg mb-6 border-b border-slate-800 pb-2 inline-block">Contacto Directo</h3>
+                <h3 class="text-white font-bold text-lg mb-6 border-b border-slate-800 pb-2 inline-block">Contacto
+                    Directo</h3>
                 <ul class="space-y-5 text-sm">
                     <li class="flex items-start">
-                        <div class="mt-1 bg-slate-800 p-2 rounded text-brand-brick mr-3"><i class="ph ph-phone-call text-lg"></i></div>
+                        <div class="mt-1 bg-slate-800 p-2 rounded text-brand-brick mr-3"><i
+                                class="ph ph-phone-call text-lg"></i></div>
                         <div>
                             <span class="block text-slate-500 text-xs uppercase font-bold">Llámanos</span>
                             <span class="text-white font-bold text-base">0414-1664241</span>
                         </div>
                     </li>
                     <li class="flex items-start">
-                        <div class="mt-1 bg-slate-800 p-2 rounded text-brand-brick mr-3"><i class="ph ph-map-pin text-lg"></i></div>
+                        <div class="mt-1 bg-slate-800 p-2 rounded text-brand-brick mr-3"><i
+                                class="ph ph-map-pin text-lg"></i></div>
                         <div>
                             <span class="block text-slate-500 text-xs uppercase font-bold">Oficina</span>
-                            <span class="text-white font-medium">Puerta Maraven, Urb. Manaure<br>Falcón, Venezuela</span>
+                            <span class="text-white font-medium">Puerta Maraven, Urb. Manaure<br>Falcón,
+                                Venezuela</span>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-slate-800 text-sm flex flex-col md:flex-row justify-between items-center text-slate-500">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-slate-800 text-sm flex flex-col md:flex-row justify-between items-center text-slate-500">
             <p>© 2026 Fabiola Rojas. Todos los derechos reservados.</p>
             <p class="mt-2 md:mt-0 font-mono text-xs opacity-70">C.P.C 88.365 | C.I 13.932.334</p>
         </div>
     </footer>
 
 </body>
+
 </html>
