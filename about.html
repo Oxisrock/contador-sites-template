@@ -83,9 +83,50 @@
                         <i class="ph ph-whatsapp-logo text-lg"></i> Agenda tu Cita
                     </a>
                 </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-700 hover:text-brand-brick p-2 focus:outline-none">
+                        <i class="ph ph-list text-3xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full left-0 top-20 shadow-lg">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="index.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-brick hover:bg-slate-50">Inicio</a>
+                <a href="#" class="block px-3 py-3 rounded-md text-base font-bold text-brand-brick bg-slate-50">Sobre
+                    Mí</a>
+                <a href="services.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-brick hover:bg-slate-50">Servicios</a>
+                <a href="resources.html"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-brick hover:bg-slate-50">Recursos</a>
+                <a href="https://wa.me/584141664241"
+                    class="block px-3 py-3 rounded-md text-base font-bold text-white bg-brand-blue hover:bg-slate-800 text-center mt-4">
+                    <i class="ph ph-whatsapp-logo text-lg mr-2"></i> Agenda tu Cita
+                </a>
             </div>
         </div>
     </nav>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('ph-x');
+                icon.classList.add('ph-list');
+            } else {
+                icon.classList.remove('ph-list');
+                icon.classList.add('ph-x');
+            }
+        });
+    </script>
 
     <section class="relative bg-brand-blue pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
         <div class="absolute inset-0 opacity-[0.05]"
@@ -154,7 +195,7 @@
         </div>
     </div>
 
-    <section class="py-24 bg-brand-gray">
+    <section class="py-12 lg:py-24 bg-brand-gray">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-8">
                 <div
@@ -309,7 +350,7 @@
         </div>
     </section>
 
-    <section class="py-24 bg-brand-gray">
+    <section class="py-12 lg:py-24 bg-brand-gray">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:grid lg:grid-cols-2 gap-16 items-center">
                 <div>
@@ -355,7 +396,7 @@
         </div>
     </section>
 
-    <section class="py-24 bg-white border-y border-slate-200">
+    <section class="py-12 lg:py-24 bg-white border-y border-slate-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-brand-blue">Trayectoria Profesional</h2>
